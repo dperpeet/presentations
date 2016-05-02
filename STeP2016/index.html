@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>OpenSource - Communities, Werkzeuge, Methoden und was noch dazu gehört</title>
+
+		<meta name="author" content="Dominik Perpeet">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <link rel="stylesheet" href="slides.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal/css/print/pdf.css' : '../reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+        <script src="../reveal/lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>OpenSource</h1>
+					<h3>Communities, Werkzeuge, Methoden</h3>
+					<p>und was noch dazu gehört</p>
+					<p>
+						<small><a href="https://github.com/dperpeet">Dominik Perpeet</a></small>
+					</p>
+                    <img style="background: transparent;border: 0;" width="512" src="Logo_RH_RGB_Reverse.svg">
+                    <aside class="notes">
+                        <ul>
+                            <li>Kurzfristig eingesprungen für Matthias Wessendorf</li>
+                            <li>Abgesprochen, aber weniger Fokus auf Foundations</li>
+                        </ul>
+                    </aside>
+				</section>
+
+				<section>
+					<h2>Dominik Perpeet</h2>
+                    <p>Software Engineer bei Red Hat</p>
+                    <p>vorher Fraunhofer IOSB</p>
+                    <p><a href="http://cockpit-project.org/">Cockpit</a></p>
+                    <p><a href="https://github.com/dperpeet">https://github.com/dperpeet</a></p>
+                    <aside class="notes">
+                        <ul>
+                            <li>Studium der Informatik am KIT</li>
+                            <li>Als Schüler freier Mitarbeiter für Firmen</li>
+                            <li>Fraunhofer: angewandte Forschung, zivil und Verteidigung</li>
+                            <li>Bei Red Hat: Hauptsächlich Arbeit am offenen Projekt Cockpit</li>
+                        </ul>
+                    </aside>
+				</section>
+
+				<section>
+					<h2>Agenda</h2>
+					<ul>
+						<li>Open Source</li>
+						<li>Wie funktioniert das?</li>
+                        <li>Was kann ich tun?</li>
+					</ul>
+				</section>
+
+				<section>
+                    <!-- open source -->
+					<section>
+						<h2>Open Source</h2>
+					</section>
+					<section>
+						<h2>hat gewonnen</h2>
+                        <aside class="notes">
+                            <ul>
+                                <li>Vor 10-15 Jahren war Open-Source Kommunismus</li>
+                                <li>Heute keine Börsentransaktion ohne Linux</li>
+                                <li>Sind wir bereit die Verantwortung zu tragen?</li>
+                            </ul>
+                        </aside>
+					</section>
+					<section>
+						<h2>Offenheit ist Standard</h2>
+                        <p>Open Source</p>
+						<p>Open Source Methoden</p>
+                        <aside class="notes">
+                            <ul>
+                                <li>Ja! Offenheit ist Standard</li>
+                                <li>Anekdote: Bank in Essen 2003, revolutionär: Linux für E-Mails, teuer ist gut</li>
+                                <li>Heute funktioniert der Kapitalismus nur mit Open Source Bausteinen</li>
+                                <li>Open Source war immer gut genug um gekaufte Produkte zu ersetzen</li>
+                                <li>Alternativen für Produkte</li>
+                            </ul>
+                        </aside>
+					</section>
+
+                    <!-- compute, connect, data -->
+                    <section>
+                        <h2>Berechnen, Daten, Verbinden</h2>
+                        <p>Open Source folgt nicht mehr nur</p>
+                        <p>Open Source führt Innovation an</p>
+                        <p>Open Source ist schnell und breitgefächert</p>
+                        <p>Red Hat ist ein Katalysator</p>
+                        <aside class="notes">
+                            <ul>
+                                <li>Wir müssen uns darüber klar sein, dass wir viel Einfluss haben</li>
+                                <li>Auch kleine Projekte</li>
+                                <li>Beispiel: NSA mit SELinux</li>
+                                <li>Beispiel: Kleine Tools, die plötzlich von vielen benutzt werden</li>
+                            </ul>
+                        </aside>
+					</section>
+                    <section>
+                        <img style="background: transparent;border: 0;" src="compute_connect_data.svg">
+                        <aside class="notes">
+                            <ul>
+                                <li>Das ist alles, was IT ist</li>
+                            </ul>
+                        </aside>
+					</section>
+                    <section>
+                        <img style="background: transparent;border: 0;" src="compute.svg">
+                        <blockquote>Verfügbare Kapazität optimal nutzen</blockquote>
+                        <p>Red Hat Enterprise Linux, Virtualisierung, JBoss</p>
+                        <p>Software Defined Computing</p>
+                        <aside class="notes">
+                            <ul>
+                                <li>Open Source hat das gelöst</li>
+                                <li>Deswegen benutzen Leute Open Source</li>
+                                <li>Fast alle Superrechner benutzen Linux</li>
+                            </ul>
+                        </aside>
+					</section>
+                    <section>
+                        <img style="background: transparent;border: 0;" src="connect.svg">
+                        <blockquote>Anwendungen, Machinen und Netzwerke optimal verbinden</blockquote>
+                        <p>Cloud Forms, Satellite, OpenStack</p>
+                        <p>Software Defined Networking</p>
+                        <aside class="notes">
+                            <ul>
+                                <li>Mit Virtualisierung ist man hier schon quasi auf Prozessebene</li>
+                                <li>Hier wird es schon spannender</li>
+                            </ul>
+                        </aside>
+					</section>
+                    <section>
+                        <img style="background: transparent;border: 0;" src="data.svg">
+                        <blockquote>Daten optimal speichern, nutzen und finden</blockquote>
+                        <p>Red Hat Storage, Message Queue</p>
+                        <p>Software Defined Storage</p>
+                        <aside class="notes">
+                            <ul>
+                                <li>Hier passiert gerade viel, Cloud</li>
+                                <li>Drehende Platten -> SSD</li>
+                                <li>Viel optimiert für konkrete Speichermedien</li>
+                            </ul>
+                        </aside>
+					</section>
+
+                    <!-- competitiveness -->
+                    <section>
+                        <h2>Open Source</h2>
+                        <p>Mehr als eine Person, eine Firma</p>
+                        <aside class="notes">
+                            <ul>
+                                <li>Keine gemeinsame Politik, kein Chef</li>
+                                <li>Treibender Faktor für Tausende, Millionen Menschen: Motivation</li>
+                            </ul>
+                        </aside>
+					</section>
+                    <section>
+                        <h2>Open Source ist Qualität</h2>
+                        <blockquote>8 von 10 Firmen wählen Open Source wegen der Qualität.</blockquote>
+                        <p>Quelle: Blackduck Future of Open Source Survey 2014</p>
+                        <aside class="notes">
+                            <ul>
+                                <li>Alle benutzen es</li>
+                                <li>Nicht mehr nur weil es bequemer ist als etwas anderes zu kaufen</li>
+                                <li>70% aller in-house Entwickler arbeiten mit oder an Open Source Projekten</li>
+                                <li>Fast niemand arbeitet mehr komplett proprietär</li>
+                                <li>Beispiel: Microsoft ist Red Hat Partner</li>
+                                <li>Uni-Beispiel: Matlab vs. Python (scipy, numpy) / SciLab/ Octave ...</li>
+                                <li>Anekdote dazu: Campuslizenzen, Matlab</li>
+                            </ul>
+                        </aside>
+					</section>
+                    <section>
+                        <h2>Es werden immer mehr</h2>
+                        <blockquote>61% aller Unternehmen übernehmen Open Source Methoden und leisten Beiträge in offenen Projekten.</blockquote>
+                        <p>Quelle: Blackduck Future of Open Source Survey 2015</p>
+                        <aside class="notes">
+                            <ul>
+                                <li>Paradigmenwechsel</li>
+                                <li>Das Rad nicht neu erfinden</li>
+                                <li>Beispiel: Telekommunikationsfirmen</li>
+                                <li>Was eh alle machen müssen: Kein Alleinstellungsmerkmal</li>
+                            </ul>
+                        </aside>
+					</section>
+                    <section>
+                        <img style="background: transparent;border: 0;" src="20_80_competitive_single.svg">
+                        <aside class="notes">
+                            <ul>
+                                <li>Firma realisiert, wie die eigene IT Struktur ist</li>
+                            </ul>
+                        </aside>
+					</section>
+                    <section>
+                        <img style="background: transparent;border: 0;" src="20_80_competitive_multi.svg">
+                        <aside class="notes">
+                            <ul>
+                                <li>Kooperation: reduziert Risiko für alle Beteiligten</li>
+                                <li>Stabile Basis, Infrastruktur</li>
+                            </ul>
+                        </aside>
+					</section>
+
+                    <!-- OpenShift -->
+                    <section>
+                        <img style="background: transparent;border: 0;" src="origin_logo.svg">
+                        <p>Upstream Community für Red Hat OpenShift</p>
+                        <p>Kern: Docker, Kubernetes</p>
+                        <aside class="notes">
+                            <ul>
+                                <li>Vollständige, Open Source Anwendungs Container Plattform</li>
+                                <li>Docker für Container, Kubernetes (Google) Cluster Management</li>
+                                <li>Nicht das Rad neu erfinden, auf die Wertschöpfung fokussieren</li>
+                                <li>Anwendung mit Project Atomic</li>
+                            </ul>
+                        </aside>
+					</section>
+                    <section>
+                        <img style="background: transparent;border: 0;" src="atomic_logo.svg">
+                        <p>Sichere, verlässliche Plattform für Container</p>
+                        <aside class="notes">
+                            <ul>
+                                <li>Das Ganze System ist ein OSTree</li>
+                                <li>Update als Ganzes, Rollback</li>
+                                <li>Interaktion mit Containern, Speicherplatz für Container</li>
+                            </ul>
+                        </aside>
+					</section>
+				</section>
+
+				<section>
+                    <section>
+                        <h2>Es werden immer mehr</h2>
+                        <p>Warum interagieren Firmen mit Open Source Communities? #2 Antwort:</p>
+                        <blockquote>Talentierte Mitarbeiter bekommen und halten</blockquote>
+                        <p>Quelle: Blackduck Future of Open Source Survey 2014</p>
+                        <aside class="notes">
+                            <ul>
+                                <li>Entwickler nehmen ihre Methoden mit zum Arbeitgeber</li>
+                                <li>Suchen auf StackOverflow</li>
+                                <li>GitHub benutzen</li>
+                                <li>Manager realisieren das mittlerweile</li>
+                            </ul>
+                        </aside>
+					</section>
+
+					<section>
+						<h2>Wie funktioniert das?</h2>
+                        <!-- src: http://cdn.makeuseof.com/wp-content/uploads/2015/07/open-source-myths-pro-bono.jpg?2047b0 -->
+                        <img style="background: transparent;border: 0;" data-src="open-source-myths-pro-bono.jpg">
+					</section>
+					<section>
+						<p>Eins der größten Probleme:</p>
+                        <h2>Ego!</h2>
+                        <aside class="notes">
+                            <ul>
+                                <li>Alles muss so gut wie möglich funktionieren</li>
+                                <li>Codequalität hängt nicht davon ab, wie ich den Autor mag</li>
+                            </ul>
+                        </aside>
+					</section>
+                    <section>
+						<h2>Kommunikation</h2>
+                        <p>Nur Sichtbares existiert</p>
+                        <aside class="notes">
+                            <ul>
+                                <li>Was niemand kennt, gibt es nicht</li>
+                                <li>Unausgesprochene Meinungen werden nicht gehört</li>
+                                <li>Wer das andere Rad nicht sieht, erfindet es neu</li>
+                                <li>Commit early, commit often</li>
+                            </ul>
+                        </aside>
+					</section>
+                    <section>
+						<h2>Diskussion</h2>
+                        <p>Sachliche Diskussion auch bei Emotionen<p>
+                        <aside class="notes">
+                            <ul>
+                                <li>Oft verschiedene Menschen aus anderen Kulturen</li>
+                                <li>Andere Motivation beizutragen</li>
+                                <li>Lauteste Stimme ist nicht automatisch die richtige</li>
+                            </ul>
+                        </aside>
+					</section>
+					<section>
+						<h2>Arbeitstechniken</h2>
+                        <aside class="notes">
+                            <ul>
+                                <li>code review</li>
+                                <li>meetings</li>
+                                <li>code style, design, ...</li>
+                            </ul>
+                        </aside>
+					</section>
+					<section>
+						<h2>Werkzeuge</h2>
+                        <aside class="notes">
+                            <ul>
+                                <li>Welche Tools?</li>
+                                <li>Schon immer diskutiert: Mac vs. PC, Trac vs. Trello, ...</li>
+                            </ul>
+                        </aside>
+					</section>
+                    <section>
+						<h2>Verantwortung</h2>
+                        <aside class="notes">
+                            <ul>
+                                <li>Open Source: viel mehr gelesen als geschrieben</li>
+                                <li>Ursprünge sehr unterschiedlich: klarmachen, was das Tool machen soll</li>
+                                <li>Tage der eierlegenden Wollmilchsau gezählt</li>
+                            </ul>
+                        </aside>
+					</section>
+                    <section>
+						<h2>Lebensdauer eines Projekts</h2>
+                        <aside class="notes">
+                            <ul>
+                                <li>Kommunikation mit Anwendern</li>
+                                <li>TESTEN</li>
+                            </ul>
+                        </aside>
+					</section>
+                    <section>
+						<h2>Bequemlichkeit</h2>
+                        <img style="background: transparent;border: 0;" data-src="ci-tasks.png">
+                        <aside class="notes">
+                            <ul>
+                                <li>Kommunikation mit Anwendern</li>
+                                <li>TESTEN</li>
+                            </ul>
+                        </aside>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Github oder Foundations?</h2>
+						<img style="background: white;border: 0;" data-src="http://www.apache.org/img/asf_logo.png">
+						<p><span style="color:red">versus</span></p>
+						<img style="background: white;border: 0;" width="220" data-src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png">
+					</section>
+					<section>
+						<h2>Github!</h2>
+						<p>Social coding?</p>
+					</section>
+					<section>
+						<h2>Software Foundations..</h2>
+						<p>ASF, Eclipse, Node, FSF, etc</p>
+					</section>
+				</section>
+
+				<!--<section>
+					<section>
+						<h2>Firmen und Open Source</h2>
+						<img style="background: white;border: 0;" data-src="http://core0.staticworld.net/images/idge/imported/article/cio/2013/02/13/hp-a-open-source-money-100341165-orig.jpg">
+					</section>
+					<section>
+						<h2>RED HAT</h2>
+						<p>Content goes here....</p>
+					</section>
+				</section>-->
+
+                <section>
+					<section>
+						<h2>Was kann ich tun?</h2>
+						<img style="background: white;border: 0;" width="400" data-src="https://opensource.com/sites/default/files/images/government-uploads/i-want-you-to-oss.png">
+					</section>
+				</section>
+
+                <!-- data-background="http://i.giphy.com/90F8aUepslB84.gif" -->
+				<section>
+					<h2>... Fragen?</h2>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="../reveal/lib/js/head.min.js"></script>
+		<script src="../reveal/js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: '../reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: '../reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: '../reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: '../reveal/plugin/zoom-js/zoom.js', async: true },
+					{ src: '../reveal/plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

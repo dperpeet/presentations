@@ -1,0 +1,10 @@
+@import url('../reveal/css/reveal.css');
+@import url('../reveal/css/theme/black.css');
+@import url('../reveal/lib/css/zenburn.css');
+
+.reveal section img {
+    background:none;
+    border:none;
+    box-shadow:none;
+}
+
