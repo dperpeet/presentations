@@ -223,18 +223,18 @@
                             </ul>
                         </aside>
 					</section>
+                </section>
 
+                <section>
                     <!-- OpenShift -->
                     <section>
-                        <img style="background: transparent;border: 0;" src="origin_logo.svg">
-                        <p>Upstream Community für Red Hat OpenShift</p>
-                        <p>Kern: Docker, Kubernetes</p>
+                        <img style="background: transparent;border: 0;" src="container.jpg">
+                        <p>Container</p>
                         <aside class="notes">
                             <ul>
-                                <li>Vollständige, Open Source Anwendungs Container Plattform</li>
-                                <li>Docker für Container, Kubernetes (Google) Cluster Management</li>
-                                <li>Nicht das Rad neu erfinden, auf die Wertschöpfung fokussieren</li>
-                                <li>Anwendung mit Project Atomic</li>
+                                <li>Open Source führt die Innovation an</li>
+                                <li>Nur relevante Teile werden eingepackt</li>
+                                <li>Bedarf hat die Entwicklung auf natürlich Art gesteuert</li>
                             </ul>
                         </aside>
 					</section>
@@ -246,6 +246,45 @@
                                 <li>Das Ganze System ist ein OSTree</li>
                                 <li>Update als Ganzes, Rollback</li>
                                 <li>Interaktion mit Containern, Speicherplatz für Container</li>
+                            </ul>
+                        </aside>
+					</section>
+                    <section>
+                        <img style="background: white;border: 0;" src="2-updates-and-rollbacks.svg">
+                        <aside class="notes">
+                            <ul>
+                                <li>Insgesamt, bekanntes Prinzip, aber konsequent</li>
+                            </ul>
+                        </aside>
+					</section>
+                    <section>
+                        <img style="background: white;border: 0;" src="3-atomic-changes.svg">
+                        <aside class="notes">
+                            <ul>
+                                <li>Nicht nur auf hoher, sondern auch auf niedriger Ebene</li>
+                            </ul>
+                        </aside>
+					</section>
+                    <section>
+                        <img style="background: transparent;border: 0;" src="origin_logo.svg">
+                        <p>Upstream Community für Red Hat OpenShift</p>
+                        <p>Kern: Docker, Kubernetes</p>
+                        <aside class="notes">
+                            <ul>
+                                <li>Vollständige, Open Source Anwendungs Container Plattform</li>
+                                <li>Docker für Container, Kubernetes (Google) Cluster Management</li>
+                                <li>Nicht das Rad neu erfinden, auf die Wertschöpfung fokussieren</li>
+                                <li>Alles online, komplette Kette von Dev, Testing, Updates, Release, Abhängigkeiten</li>
+                                <li>Anwendung mit Project Atomic</li>
+                            </ul>
+                        </aside>
+					</section>
+                    <section>
+                        <img style="background: transparent;border: 0;" src="cockpit_openshift.png">
+                        <aside class="notes">
+                            <ul>
+                                <li>So sieht die Verwaltung in Cockpit aus</li>
+                                <li>Bestehende Teile einbinden, Projekte starten "DevOps"</li>
                             </ul>
                         </aside>
 					</section>
@@ -305,6 +344,15 @@
                             </ul>
                         </aside>
 					</section>
+                    <section>
+						<h2>Meritocracy</h2>
+                        <p>Leistung definiert die Richtung<p>
+                        <aside class="notes">
+                            <ul>
+                                <li>Vorbild durch Respekt</li>
+                            </ul>
+                        </aside>
+					</section>
 					<section>
 						<h2>Arbeitstechniken</h2>
                         <aside class="notes">
@@ -348,8 +396,9 @@
                         <img style="background: transparent;border: 0;" data-src="ci-tasks.png">
                         <aside class="notes">
                             <ul>
-                                <li>Kommunikation mit Anwendern</li>
-                                <li>TESTEN</li>
+                                <li>Cockpit: Wir probieren das Dinge nur einmal gemacht werden müssen</li>
+                                <li>Ständig testen, Agile, jeder kann mitmachen</li>
+                                <li>Review einfacher</li>
                             </ul>
                         </aside>
 					</section>
@@ -357,36 +406,64 @@
 
 				<section>
 					<section>
-						<h2>Github oder Foundations?</h2>
-						<img style="background: white;border: 0;" data-src="http://www.apache.org/img/asf_logo.png">
-						<p><span style="color:red">versus</span></p>
-						<img style="background: white;border: 0;" width="220" data-src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png">
+                        <h2>Kathedrale vs. Basar</h2>
+						<aside class="notes">
+                            <ul>
+                                <li>Kathedrale: Quellcode ist geschlossen oder nur mit jeder Version einsehbar</li>
+                                <li>Entwicklung auf eine Gruppe beschränkt</li>
+                                <li>Ein Chef/Architekt, ein Ziel: Dann fertig</li>
+                                <li>Basar: Selbstorganisation, offen, organisch</li>
+                            </ul>
+                        </aside>
 					</section>
 					<section>
-						<h2>Github!</h2>
-						<p>Social coding?</p>
+						<img style="background: transparent;border: 0;" data-src="cockpit_logo.png">
+                        <aside class="notes">
+                            <ul>
+                                <li>Agile Prinzip</li>
+                                <li>Viel mehr Overhead im Detail (s. Zellen mit DNS, Verschwendung?)</li>
+                                <li>Code ist wegwerfbar, Evolution</li>
+                                <li>Beitrag leisten: innerhalb von einer Woche wird es benutzt</li>
+                            </ul>
+                        </aside>
 					</section>
-					<section>
-						<h2>Software Foundations..</h2>
-						<p>ASF, Eclipse, Node, FSF, etc</p>
+                    <section>
+						<img style="background: transparent;border: 0;" data-src="cockpit_kubernetes.png">
+                        <aside class="notes">
+                            <ul>
+                                <li>Visuelle Darstellung</li>
+                                <li>Sonst: Was ist mein Cluster?</li>
+                            </ul>
+                        </aside>
+					</section>
+                    <section>
+						<img style="background: transparent;border: 0;" data-src="cockpit_system.png">
+                        <aside class="notes">
+                            <ul>
+                                <li>Beispiel für Integration</li>
+                                <li>Red Hat kombiniert die Technologien und macht sie zugänglich</li>
+                                <li>Mit Tiefgang: nicht nur aufgesetzt, sondern auf allen Ebenen, um Benutzerinteraktion zu verbessern</li>
+                            </ul>
+                        </aside>
 					</section>
 				</section>
-
-				<!--<section>
-					<section>
-						<h2>Firmen und Open Source</h2>
-						<img style="background: white;border: 0;" data-src="http://core0.staticworld.net/images/idge/imported/article/cio/2013/02/13/hp-a-open-source-money-100341165-orig.jpg">
-					</section>
-					<section>
-						<h2>RED HAT</h2>
-						<p>Content goes here....</p>
-					</section>
-				</section>-->
 
                 <section>
 					<section>
 						<h2>Was kann ich tun?</h2>
-						<img style="background: white;border: 0;" width="400" data-src="https://opensource.com/sites/default/files/images/government-uploads/i-want-you-to-oss.png">
+						<!--<img style="background: white;border: 0;" width="400" data-src="https://opensource.com/sites/default/files/images/government-uploads/i-want-you-to-oss.png">-->
+					</section>
+                    <section>
+						<h2>Beitragen!</h2>
+						<aside class="notes">
+                            <ul>
+                                <li>Diskussion</li>
+                                <li>Code</li>
+                                <li>Test</li>
+                                <li>Übersetzung</li>
+                                <li>Dokumentation</li>
+                            </ul>
+                        </aside>
 					</section>
 				</section>
 
