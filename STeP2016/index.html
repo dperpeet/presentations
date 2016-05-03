@@ -77,6 +77,11 @@
                     <!-- open source -->
 					<section>
 						<h2>Open Source</h2>
+                        <aside class="notes">
+                            <ul>
+                                <li>Was ist Open Source?</li>
+                            </ul>
+                        </aside>
 					</section>
 					<section>
 						<h2>hat gewonnen</h2>
@@ -162,6 +167,7 @@
                                 <li>Hier passiert gerade viel, Cloud</li>
                                 <li>Drehende Platten -> SSD</li>
                                 <li>Viel optimiert für konkrete Speichermedien</li>
+                                <li>Alles "Software Defined" - das hat mit Open Source Methoden zu tun</li>
                             </ul>
                         </aside>
 					</section>
@@ -220,6 +226,7 @@
                             <ul>
                                 <li>Kooperation: reduziert Risiko für alle Beteiligten</li>
                                 <li>Stabile Basis, Infrastruktur</li>
+                                <li>Überleitung: Beispiel für eine Innovation aus Open Source, Container</li>
                             </ul>
                         </aside>
 					</section>
@@ -234,7 +241,10 @@
                             <ul>
                                 <li>Open Source führt die Innovation an</li>
                                 <li>Nur relevante Teile werden eingepackt</li>
+                                <li>"Alles was meine Anwendung braucht zusammen</li>
                                 <li>Bedarf hat die Entwicklung auf natürlich Art gesteuert</li>
+                                <li>Neuentwicklung größer als zuvor über ein Produkt steuerbar</li>
+                                <li>Buzzword "Microservices"</li>
                             </ul>
                         </aside>
 					</section>
@@ -243,6 +253,7 @@
                         <p>Sichere, verlässliche Plattform für Container</p>
                         <aside class="notes">
                             <ul>
+                                <li>Nächster Schritt: Container müssen irgendwo laufen</li>
                                 <li>Das Ganze System ist ein OSTree</li>
                                 <li>Update als Ganzes, Rollback</li>
                                 <li>Interaktion mit Containern, Speicherplatz für Container</li>
@@ -285,6 +296,8 @@
                             <ul>
                                 <li>So sieht die Verwaltung in Cockpit aus</li>
                                 <li>Bestehende Teile einbinden, Projekte starten "DevOps"</li>
+                                <li>Natürlich muss man der Quelle trauen, nicht immer einzeln optimiert</li>
+                                <li>Hello World in Go: Mehrere Megabyte</li>
                             </ul>
                         </aside>
 					</section>
@@ -302,6 +315,7 @@
                                 <li>Suchen auf StackOverflow</li>
                                 <li>GitHub benutzen</li>
                                 <li>Manager realisieren das mittlerweile</li>
+                                <li>Essentiell: Motivation der Arbeitnehmer</li>
                             </ul>
                         </aside>
 					</section>
@@ -314,17 +328,23 @@
                         <img style="background: transparent;border: 0;" width="512" data-src="how_do_i1.png">
                         <aside class="notes">
                             <ul>
-                                <li>Wie funktioniert das?</li>
+                                <li>Open Source - Wie funktioniert das?</li>
+                                <li>"Ich programmiere etwas und stelle das Ergebnis einfach online"</li>
+                                <li>"Warum verbessert das niemand?"</li>
                             </ul>
                         </aside>
 					</section>
-					<section>
-						<p>Eins der größten Probleme:</p>
-                        <h2>Ego!</h2>
-                        <aside class="notes">
+                    <section>
+                        <h2>Kathedrale vs. Basar</h2>
+						<aside class="notes">
                             <ul>
-                                <li>Alles muss so gut wie möglich funktionieren</li>
-                                <li>Codequalität hängt nicht davon ab, wie ich den Autor mag</li>
+                                <li>Essay von Eric Raymond, ~1997 vorgetragen</li>
+                                <li>1. Punkt: Jede gute Software wird von einem Entwickler geschrieben, der ein persönliches Problem lösen will.</li>
+                                <li>Kathedrale: Quellcode ist geschlossen oder nur mit jeder Version einsehbar</li>
+                                <li>Entwicklung auf eine Gruppe beschränkt</li>
+                                <li>Ein Chef/Architekt, ein Ziel: Dann fertig</li>
+                                <li>Basar: Selbstorganisation, offen, organisch</li>
+                                <li>Beispiel: "Alles neu schreiben", Kathedralenmodell</li>
                             </ul>
                         </aside>
 					</section>
@@ -348,6 +368,20 @@
                                 <li>Oft verschiedene Menschen aus anderen Kulturen</li>
                                 <li>Andere Motivation beizutragen</li>
                                 <li>Lauteste Stimme ist nicht automatisch die richtige</li>
+                                <li>Gemeinsame Ziele finden - die 80%</li>
+                                <li>Zu groß -> Aufteilen?</li>
+                            </ul>
+                        </aside>
+					</section>
+                    <section>
+						<p>Eins der größten Probleme:</p>
+                        <h2>Ego!</h2>
+                        <aside class="notes">
+                            <ul>
+                                <li>Alles muss so gut wie möglich funktionieren</li>
+                                <li>Codequalität hängt nicht davon ab, wie ich den Autor mag</li>
+                                <li>Beispiel: eigener Code wird ersetzt</li>
+                                <li>(noch weniger als 15 Slides)</li>
                             </ul>
                         </aside>
 					</section>
@@ -364,18 +398,13 @@
 						<h2>Arbeitstechniken</h2>
                         <aside class="notes">
                             <ul>
+                                <li>z.B. Agile - immer Teile übernehmen, die funktionieren</li>
                                 <li>code review</li>
                                 <li>meetings</li>
                                 <li>code style, design, ...</li>
-                            </ul>
-                        </aside>
-					</section>
-					<section>
-						<h2>Werkzeuge</h2>
-                        <aside class="notes">
-                            <ul>
-                                <li>Welche Tools?</li>
-                                <li>Schon immer diskutiert: Mac vs. PC, Trac vs. Trello, ...</li>
+                                <li>Hilfreich, wenn Neue dazukommen: Stellen Altes in Frage</li>
+                                <li>"Weil wir es immer so gemacht haben" reicht nicht</li>
+                                <li>Gesamtergebnis gewinnt durch Heterogenität</li>
                             </ul>
                         </aside>
 					</section>
@@ -385,16 +414,36 @@
                             <ul>
                                 <li>Open Source: viel mehr gelesen als geschrieben</li>
                                 <li>Ursprünge sehr unterschiedlich: klarmachen, was das Tool machen soll</li>
-                                <li>Tage der eierlegenden Wollmilchsau gezählt</li>
+                                <li>Tage der eierlegenden Wollmilchsau als Produkt gezählt</li>
+                                <li>Freiheit - und alles was dazu gehört: weniger Kontrolle über andere, mehr über sich selbst</li>
+                                <li>Open Source hat gewonnen - Führungsverantwortung</li>
                             </ul>
                         </aside>
 					</section>
                     <section>
+						<h2>Werkzeuge</h2>
+                        <aside class="notes">
+                            <ul>
+                                <li>Welche Tools?</li>
+                                <li>Schon immer diskutiert: Mac vs. PC, Trac vs. Trello, ...</li>
+                                <li>Hilfsmittel sollten nicht zum Hauptpunkt werden</li>
+                                <li>Beim Bedarf anfangen - dann findet sich das Werkzeug</li>
+                                <li>Aufwand / Nutzen abschätzen</li>
+                            </ul>
+                        </aside>
+					</section>
+				</section>
+
+				<section>
+                    <section>
 						<h2>Lebensdauer eines Projekts</h2>
                         <aside class="notes">
                             <ul>
+                                <li>Hängt von diversen Faktoren ab, nicht alles kontrollierbar</li>
                                 <li>Kommunikation mit Anwendern</li>
-                                <li>TESTEN</li>
+                                <li>Kontinuierlich an Bedarf anpassen</li>
+                                <li>Bei hinreichend vielen Anwendern Dinge, an die man nicht gedacht hat</li>
+                                <li>TESTEN, Automatisierung</li>
                             </ul>
                         </aside>
 					</section>
@@ -403,23 +452,9 @@
                         <img style="background: transparent;border: 0;" data-src="ci-tasks.png">
                         <aside class="notes">
                             <ul>
-                                <li>Cockpit: Wir probieren das Dinge nur einmal gemacht werden müssen</li>
+                                <li>Cockpit: Wir probieren, dass Dinge nur einmal gemacht werden müssen</li>
                                 <li>Ständig testen, Agile, jeder kann mitmachen</li>
                                 <li>Review einfacher</li>
-                            </ul>
-                        </aside>
-					</section>
-				</section>
-
-				<section>
-					<section>
-                        <h2>Kathedrale vs. Basar</h2>
-						<aside class="notes">
-                            <ul>
-                                <li>Kathedrale: Quellcode ist geschlossen oder nur mit jeder Version einsehbar</li>
-                                <li>Entwicklung auf eine Gruppe beschränkt</li>
-                                <li>Ein Chef/Architekt, ein Ziel: Dann fertig</li>
-                                <li>Basar: Selbstorganisation, offen, organisch</li>
                             </ul>
                         </aside>
 					</section>
@@ -427,6 +462,7 @@
 						<img style="background: transparent;border: 0;" data-src="cockpit_logo.png">
                         <aside class="notes">
                             <ul>
+                                <li>Beispiel für Open Source Entwicklung</li>
                                 <li>Agile Prinzip</li>
                                 <li>Viel mehr Overhead im Detail (s. Zellen mit DNS, Verschwendung?)</li>
                                 <li>Code ist wegwerfbar, Evolution</li>
@@ -449,6 +485,8 @@
                             <ul>
                                 <li>Beispiel für Integration</li>
                                 <li>Red Hat kombiniert die Technologien und macht sie zugänglich</li>
+                                <li>Red Hat war lange Katalysator, aber es werden immer mehr Firmen</li>
+                                <li>Siehe Google mit Android, Microsoft als Red Hat Partner</li>
                                 <li>Mit Tiefgang: nicht nur aufgesetzt, sondern auf allen Ebenen, um Benutzerinteraktion zu verbessern</li>
                             </ul>
                         </aside>
@@ -469,6 +507,9 @@
                                 <li>Test</li>
                                 <li>Übersetzung</li>
                                 <li>Dokumentation</li>
+                                <li>Falls überwältigt: das ist normal</li>
+                                <li>Anekdote 1. Semester: Bewältigung von Komplexität</li>
+                                <li>Qualität muss nicht monoton steigen, Optimierung ist nicht 1D</li>
                             </ul>
                         </aside>
 					</section>
