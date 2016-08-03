@@ -79,17 +79,6 @@
                     </aside>
                 </section>
 
-                <section data-background-video="change-hostname.webm">
-                    <aside class="notes">
-                        <ul>
-                            <li>Here's a simple example, changing the hostname.</li>
-                            <li>We give it a pretty name of "My pink pony", it generates
-                                an appropriate hostname. And the name is changed both
-                                in the browser and in a the terminal.</li>
-                        </ul>
-                    </aside>
-                </section>
-
                 <section>
                     <h2>Cockpit calls<br>
                         <strong>System APIs directly</strong></h2>
@@ -97,6 +86,16 @@
 
                 <section data-transition="none">
                     <img src="layers.png">
+                </section>
+
+                <section>
+                    <img src="transport-multi.png">
+                    <aside class="notes">
+                        <ul>
+                            <li>When connecting out to other systems, we simply launch
+                                cockpit-bridge on the other system via ssh.</li>
+                        </ul>
+                    </aside>
                 </section>
 
                 <section>
@@ -178,40 +177,97 @@
                     data-background-color="white" data-background-size="contain">
                 </section>
 
-                <section data-background-video="dbus-proxy.webm">
+                <!--<section data-background-video="change-hostname.webm">
+                    <aside class="notes">
+                        <pre>
+                            proxy = cockpit.dbus("org.freedesktop.hostname1").proxy()
+                            proxy.KernelRelease
+                            proxy.StaticHostname
+                            proxy.SetStaticHostname("marmalade", true)
+                            - Switch to terminal
+                            hostname
+                            hostnamectl set-hostname ZeroG
+                            proxy.StaticHostname
+                        </pre>
+                        <ul>
+                            <li>Here's a simple example, changing the hostname.</li>
+                            <li>We give it a pretty name of "My pink pony", it generates
+                                an appropriate hostname. And the name is changed both
+                                in the browser and in a the terminal.</li>
+                        </ul>
+                    </aside>
+                </section>-->
+                <section>
+                    <section>
+                        <h2><strong>Intermission: DBus demo</strong></h2>
+                        <img src="divider-29115_1280.png" style="width: 300px">
+                        <aside class="notes">
+                            <ul>
+                                <pre>
+                                    proxy = cockpit.dbus("org.freedesktop.hostname1").proxy()
+                                    proxy.KernelRelease
+                                    proxy.StaticHostname
+                                    proxy.SetStaticHostname("marmalade", true)
+                                    - Switch to terminal
+                                    hostname
+                                    hostnamectl set-hostname ZeroG
+                                    proxy.StaticHostname
+                                </pre>
+                                <li>Let's look at some examples, here's the hostnamed call we made earlier. We are typing javascript code directly in the interactive console in a
+                                browser. If you have Cockpit running on your system try this.</li>
+
+                                <li>It's trivial to interact with the DBUS API, easier even than if you
+                                were on the system itself issueing gdbus commands... but that's the point ... we are on
+                                the system ... logged into the system ... and the javascript code
+                                here is running as part of the login session.</li>
+
+                                <li>This is what got me excited about Cockpit. The very idea
+                                that there was code in the browser interacting directly with the system
+                                cutting through the usual layers of crap ... really makes building
+                                admin tools fun again.</li>
+
+                                <li>And of course it works both ways, changes made via the command line tools update the api and those changes are picked up by the cockpit UI in the browser.</li>
+                        </ul>
+                        </aside>
+                    </section>
+                    <section data-background-video="dbus-proxy.webm">
+                    </section>
+                </section>
+
+                <section>
+                    <img src="transport-04.png">
                     <aside class="notes">
                         <ul>
-                            <li>Let's look at some examples, here's the hostnamed call we made earlier. We are typing javascript code directly in the interactive console in a
-                            browser. If you have Cockpit running on your system try this.</li>
-
-                            <li>It's trivial to interact with the DBUS API, easier even than if you
-                            were on the system itself issueing gdbus commands... but that's the point ... we are on
-                            the system ... logged into the system ... and the javascript code
-                            here is running as part of the login session.</li>
-
-                            <li>This is what got me excited about Cockpit. The very idea
-                            that there was code in the browser interacting directly with the system
-                            cutting through the usual layers of crap ... really makes building
-                            admin tools fun again.</li>
-
-                            <li>And of course it works both ways, changes made via the command line tools update the api and those changes are picked up by the cockpit UI in the browser.</li>
-                    </ul>
+                            <li>Translated internally as messages to the bridge (stable API)</li>
+                        </ul>
                     </aside>
                 </section>
 
                 <section>
                     <h3>What drives Cockpit?</h3>
-                    <h2><strong>Open Source</strong></h2>
-                </section>
-
-                <section>
-                    <h3>What drives Cockpit?</h3>
-                    <h2><strong>Agile</strong></h2>
+                    <h2><strong>Open Source, Agile</strong></h2>
+                    <aside class="notes">
+                        <ul>
+                            <li>Integrate things</li>
+                            <li>We don't pull in, we interface and use</li>
+                            <li>Distributed, open</li>
+                            <li>deliver early, deliver often</li>
+                            <li>Feedback loops</li>
+                            <li>Test everything to ensure quality</li>
+                        </ul>
+                    </aside>
                 </section>
 
                 <section>
                     <h2><strong>Let's bring it all together</strong></h2>
                     <h3>What could possibly go wrong?!</h3>
+                    <aside class="notes">
+                        <ul>
+                            <li>Upstream APIs luckily don't change or break</li>
+                            <li>We can depend on upstream tests to catch bugs</li>
+                            <li>All distributions are the same</li>
+                        </ul>
+                    </aside>
                 </section>
 
 
@@ -342,7 +398,7 @@
                 </section>
 
                 <section>
-                    <h2><strong>Intermission: Demo</strong></h2>
+                    <h2><strong>Intermission: Demo testing</strong></h2>
                     <img src="divider-29115_1280.png" style="width: 300px">
                 </section>
 
@@ -413,6 +469,7 @@
                         <ul>
                             <li>reduce friction by bringing model of testing closer to how open source works</li>
                             <li>principle: test variant against invariant, what changed against what didn't</li>
+                            <li>Tests are like microservices</li>
                         </ul>
                     </aside>
                 </section>
