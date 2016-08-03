@@ -202,17 +202,17 @@
                         <h2><strong>Intermission: DBus demo</strong></h2>
                         <img src="divider-29115_1280.png" style="width: 300px">
                         <aside class="notes">
+                            <p>
+                                proxy = cockpit.dbus("org.freedesktop.hostname1").proxy()
+                                proxy.KernelRelease
+                                proxy.StaticHostname
+                                proxy.SetStaticHostname("marmalade", true)
+                                - Switch to terminal
+                                hostname
+                                hostnamectl set-hostname ZeroG
+                                proxy.StaticHostname
+                            </p>
                             <ul>
-                                <pre>
-                                    proxy = cockpit.dbus("org.freedesktop.hostname1").proxy()
-                                    proxy.KernelRelease
-                                    proxy.StaticHostname
-                                    proxy.SetStaticHostname("marmalade", true)
-                                    - Switch to terminal
-                                    hostname
-                                    hostnamectl set-hostname ZeroG
-                                    proxy.StaticHostname
-                                </pre>
                                 <li>Let's look at some examples, here's the hostnamed call we made earlier. We are typing javascript code directly in the interactive console in a
                                 browser. If you have Cockpit running on your system try this.</li>
 
@@ -348,12 +348,12 @@
                             <li>Testing is distributed and can scale up and down.</li>
                             <li>Contributors can run it on your laptop.</li>
                             <li>Fedora Project, Red Hat have donated some instances.</li>
-                            <li>Other random machines we found.</li>
+                            <li>Tasks, logs, status, images, naughty</li>
                         </ul>
                     </aside>
                 </section>
 
-                <section data-background="02-tasks.png" data-background-color="white" data-background-size='100%'>
+                <!--<section data-background="02-tasks.png" data-background-color="white" data-background-size='100%'>
                     <aside class="notes">
                         <ul>
                             <li>Each of these verify machines look for tasks to run.</li>
@@ -395,11 +395,16 @@
                             <li>Known issues.</li>
                         </ul>
                     </aside>
-                </section>
+                </section>-->
 
                 <section>
                     <h2><strong>Intermission: Demo testing</strong></h2>
                     <img src="divider-29115_1280.png" style="width: 300px">
+                    <aside class="notes">
+                        <ul>
+                            <li>Tasks, logs, status, images, naughty</li>
+                        </ul>
+                    </aside>
                 </section>
 
                 <section>
@@ -445,6 +450,12 @@
 
                 <section>
                     <h3>The Framework is not King</h3>
+                    <aside class="notes">
+                        <ul>
+                            <li>Projects aren't tested better because they use a better framework</li>
+                            <li>They are tested better if the tests (content!) are good</li>
+                        </ul>
+                    </aside>
                 </section>
 
                 <section>
@@ -464,12 +475,12 @@
                 </section>
 
                 <section>
-                    <h3>Different tests for different software?</h3>
+                    <h3>Tests are like microservices</h3>
                     <aside class="notes">
                         <ul>
                             <li>reduce friction by bringing model of testing closer to how open source works</li>
                             <li>principle: test variant against invariant, what changed against what didn't</li>
-                            <li>Tests are like microservices</li>
+                            <li>Different tests for different software?</li>
                         </ul>
                     </aside>
                 </section>
@@ -477,7 +488,7 @@
                     <!-- http://1.bp.blogspot.com/-GCyMrP10ebg/VYNN9iIQ4nI/AAAAAAAAAFo/w1JX33N0NO4/s1600/brick-pile.jpg -->
                     <aside class="notes">
                         <ul>
-                            <li>No need to always start from scratch...<li>
+                            <li>No need to always start from scratch...</li>
                             <li>Testables from upstream can be invariants downstream</li>
                         </ul>
                     </aside>
