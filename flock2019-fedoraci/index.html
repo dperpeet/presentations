@@ -1,0 +1,272 @@
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Fedora CI Objective: present and future</title>
+
+        <link rel="stylesheet" href="slides.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section class="titleslide">
+                    <h2>Fedora CI Objective:<br>present and future</h2>
+                    <h4>Dominik Perpeet</h4>
+                    <h4>Aleksandra Fedorova (bookwar)</h4>
+                </section>
+
+                <section>
+                    <h2>Topics</h2>
+                    <p>
+                        Fedora CI Objective 2017
+                    </p>
+                    <p>
+                        What is CI?
+                    </p>
+                    <p>
+                        Fedora CI Objective 2019
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Fedora CI Objective 2017</h2>
+                    <ul>
+                        <li>We aim to deliver Atomic Host in Fedora via <b>Continuous Integration</b> and <b>Continuous Delivery</b></li>
+                        <li>A framework for automating tests and providing results</li>
+                        <li>Primary goal is to know that component builds are tested, working, and ready for a compose</li>
+                        <li>https://docs.fedoraproject.org/en-US/ci/</li>
+                    </ul>
+                    <aside class="notes">
+                        <ul>
+                            <li>Objective page: By Flock in September 2017</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Standard Test Interface</h2>
+                    <ul>
+                        <li>Standard Discovery, Staging and Invocation of Integration Tests</li>
+                        <li>Pipeline to run the tests</li>
+                        <li>Provide feedback to users</li>
+                    </ul>
+                    <aside class="notes">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Tests in dist-git</h2>
+                    <ul>
+                      <p class="fragment roll-in">
+                          packages with tests in dist-git
+                          <img src="dist-git-tests.png">
+                      </p>
+                    </ul>
+                    <aside class="notes">
+                        <ul>
+                            <li>Many tests from downstream via Upstream First</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Testing is a thing</h2>
+                    <p class="fragment roll-in">
+                        Tests run on rawhide and branched releases
+                        <img src="ci-jobs.png">
+                    </p>
+                </section>
+
+                <section>
+                    <h2>CI Objective 1.0</h2>
+                    <ul>
+                      <p class="fragment roll-in">
+                          DONE!
+                      </p>
+                      <p class="fragment roll-in">
+                          sort of
+                      </p>
+                    </ul>
+                    <aside class="notes">
+                        <ul>
+                            <li>Parts became obsoleted, but many things done</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Retro: CI Objective 1.0</h2>
+                    <ul>
+                        <li>Mindset change bootstrapped</li>
+                        <li>Standards established</li>
+                        <li>Some workflows hurt...</li>
+                        <li>More design needed!</li>
+                    </ul>
+                    <aside class="notes">
+                        <ul>
+                            <li>Parts became obsoleted, but many things done</li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>What is CI?</h2>
+                </section>
+
+                <section>
+                    <h2>What is CI?</h2>
+                    <ul>
+                        <li><a href="https://docs.fedoraproject.org/en-US/ci/manifesto/">https://docs.fedoraproject.org/en-US/ci/manifesto/</a></li>
+                        <li>Continuous integration is a developer/packager process and workflow</li>
+                        <li>Continuous integration aims to ensure broken changes do not affect other developers, packagers, maintainers or users </li>
+                    </ul>
+                    <aside class="notes">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </aside>
+                </section>
+                <section>
+                    <h2>“Continuous Integration”​</h2>
+                    <ul>
+                        <li>Assemble it together like in production, then test drive it like a user. This is <b>Integration</b>.</li>
+                        <li>Do those integration tests for every single "change". This is <b>Continuous</b>.</li>
+                    </ul>
+                    <aside class="notes">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Self-sustaining Continuous Integration​</h2>
+                    <ul>
+                        <li>Tests must be changeable by people making the software change</li>
+                        <li>Rapid feedback to the person who makes a change</li>
+                    </ul>
+                    <aside class="notes">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </aside>
+                </section>
+
+                <section>
+                    <h2>Fedora CI Objective 2019</h2>
+                </section>
+
+                <section>
+                    <h2>Why an Objective?</h2>
+                    <ul>
+                        <p>Larger than one problem</p>
+                        <p>Synchronize multiple goals</p>
+                        <p>Keep in mind overall rate of change, impact</p>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Fedora CI Objective 2019</h2>
+                    <ul>
+                        <p>Continuous Integration for Rawhide</p>
+                        <p>Changes shouldn't break other contributions</p>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Key areas</h2>
+                    <ul>
+                        <li>Rawhide gating (pingou)</li>
+                        <li>Distribution-wide tests for packages (dcantrell, tflink)</li>
+                        <li>Documentation for the packager experience (bookwar)</li>
+                        <li>Tie in upstream project via Packit (ttomecek)</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Rawhide gating</h2>
+                    <ul>
+                        <li>Works: Single-package updates</li>
+                        <li>Next: Multi-package updates</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Distribution-wide tests</h2>
+                    <ul>
+                        <li>Almost done: rpminspect</li>
+                        <li>Next: Establish rpminspect as a reliable test</li>
+                        <li>Next: Policy - how to gate distro-wide?</li>
+                        <li>Later: installability, reverse dependency testing, rebuild testing</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Documentation</h2>
+                    <ul>
+                        <li>Now: Landing page <a href="https://docs.fedoraproject.org/en-US/ci/">https://docs.fedoraproject.org/en-US/ci/</a> exists</li>
+                        <li>Next: Demo videos, guides, examples</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Packit</h2>
+                    <p class="fragment roll-in">
+                        Connect the upstream to Fedora
+                        <img src="workflow.jpg">
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Packit</h2>
+                    <ul>
+                        <li>Now: packit can propose updates to Fedora from upstream</li>
+                        <li>Next: packit can do builds</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Questions</h2>
+                    <ul>
+                        <li>#fedora-ci on FreeNode</li>
+                        <li><b>dperpeet, bookwar</b> on FreeNode</li>
+                        <li>Fedora CI SIG</li>
+                        <li><a href="https://teams.fedoraproject.org/project/ci">https://teams.fedoraproject.org/project/ci</a></li>
+                    </ul>
+                </section>
+
+            </div>
+        </div>
+
+        <script src="../reveal/js/reveal.js"></script>
+
+        <script>
+            // More info about config & dependencies:
+            // - https://github.com/hakimel/reveal.js#configuration
+            // - https://github.com/hakimel/reveal.js#dependencies
+            Reveal.initialize({
+                dependencies: [
+                    { src: '../reveal/plugin/markdown/marked.js' },
+                    { src: '../reveal/plugin/markdown/markdown.js' },
+                    { src: '../reveal/plugin/notes/notes.js', async: true },
+                    { src: '../reveal/plugin/highlight/highlight.js', async: true }
+                ]
+            });
+        </script>
+    </body>
+</html>
